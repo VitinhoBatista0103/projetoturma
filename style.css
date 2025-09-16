@@ -171,6 +171,12 @@ body {
   line-height: 1.5;
 }
 
+.icone-profissao {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px ;
+}
+
 /* Rodapé */
 .footer {
   background-color: #232946;
