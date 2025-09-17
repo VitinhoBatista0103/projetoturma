@@ -207,7 +207,12 @@ body {
   width: 100%;
   border-radius: 12px;
 }
-
+/* ===================== BARRA DE PESQUISA ===================== */
+input{
+  display: block; 
+  width: 50%; 
+  margin: 0 auto;
+}
 /* ===================== BOTÕES PADRÃO ===================== */
 button, .btn {
   background: linear-gradient(135deg, #2d0c57, #512da8);
