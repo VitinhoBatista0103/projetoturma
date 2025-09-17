@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 /* ===================== RESET ===================== */
 * {
   margin: 0;
@@ -25,6 +29,15 @@ body {
   justify-content: space-between; /* Logo à esquerda, nav à direita */
   align-items: center;
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.logo-name{
+  display: flex;
+  align-items: center;
+}
+
+.logo-name img{
+  vertical-align: middle;
 }
 .header span{
   background: linear-gradient(90deg, #8c82fc, #6c63ff, #5a50e0);
@@ -244,4 +257,5 @@ button:active, .btn:active {
 .alunos {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
