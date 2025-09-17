@@ -13,6 +13,7 @@ body {
   color: #fffffe;
 }
 
+
 /* ===================== CABEÇALHO ===================== */
 .header {
   position: sticky;
@@ -25,7 +26,14 @@ body {
   align-items: center;
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
-
+.header span{
+  background: linear-gradient(90deg, #8c82fc, #6c63ff, #5a50e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nome-pagina{
+  font-weight: 800;
+}
 .header.blur {
   background: rgba(45, 12, 87, 0.7);
   backdrop-filter: blur(10px);
@@ -37,6 +45,10 @@ body {
   font-weight: 700;
   color: white;
   text-decoration: none;
+}
+
+.nome-pagina{
+  background-color: linear-gradient(135deg, #2d0c57, #512da8);
 }
 
 /* ===================== NAVEGAÇÃO ===================== */
@@ -55,7 +67,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #c5b3ff;
+  color: #c193f5;
 }
 
 /* ===================== MENU RESPONSIVO ===================== */
@@ -155,7 +167,7 @@ body {
 }
 
 .profissao button:hover {
-  background-color: #4b38c8;
+  background-color: linear-gradient(135deg, #2d0c57, #512da8);
   box-shadow: 0 6px 20px rgba(75, 56, 200, 0.7);
   transform: translateY(-4px);
 }
@@ -182,7 +194,7 @@ body {
 
 /* ===================== BOTÕES PADRÃO ===================== */
 button, .btn {
-  background: #6246ea;
+  background: linear-gradient(135deg, #2d0c57, #512da8);
   color: #ffffff;
   border: none;
   border-radius: 12px;
@@ -207,7 +219,7 @@ button:active, .btn:active {
 
 /* ===================== RODAPÉ ===================== */
 .footer {
-  background-color: #232946;
+  background-color: #171923;
   color: white;
   padding: 20px 0;
   text-align: center;
