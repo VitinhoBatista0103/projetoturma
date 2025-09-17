@@ -17,7 +17,6 @@ body {
   color: #fffffe;
 }
 
-
 /* ===================== CABEÇALHO ===================== */
 .header {
   position: sticky;
@@ -49,7 +48,7 @@ body {
 }
 .header.blur {
   background: rgba(45, 12, 87, 0.7);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(10px);
 }
 
@@ -68,7 +67,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px; /* Espaço entre itens */
+  gap: 30px;
 }
 
 .nav-links li a {
@@ -128,8 +127,9 @@ body {
   padding: 20px 0;
   align-items: stretch;
 }
+/* ===================== TEXTO ===================== */
 
-.container p{
+.text p{
   text-indent: 40px;
 }
 /* ===================== SEÇÕES ===================== */
