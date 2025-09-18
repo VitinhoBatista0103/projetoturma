@@ -207,12 +207,35 @@ body {
   width: 100%;
   border-radius: 12px;
 }
+
 /* ===================== BARRA DE PESQUISA ===================== */
+
+/* ===================== BARRA DE PESQUISA ===================== */
+
 input{
-  display: block; 
-  width: 50%; 
+  background-color: #fffffe;
+  color: #0f0e17;
+  display: flex;
+  width: 50%;
   margin: 0 auto;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.15);
+  transition: border .4s ease-in-out;
 }
+
+input:focus{
+  border-color: #4b38c8;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: .9rem;
+}
+
+/* O restante do seu código CSS */
+
 /* ===================== BOTÕES PADRÃO ===================== */
 button, .btn {
   background: linear-gradient(135deg, #2d0c57, #512da8);
@@ -266,4 +289,55 @@ button:active, .btn:active {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===================== PÁGINA DAS PROFISSÕES ===================== */
 
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 0;
+
+  /* Imagem de fundo */
+  background: url("assets/programador-pag.jpg") no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+  color: #fff;
+}
+
+/* Contraste suave na lateral direita */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.6) 50%, transparent 70%);
+}
+
+/* Conteúdo por cima */
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilo minimalista do título */
+.hero-inner h1 {
+  font-size: 5.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* Detalhe sutil */
+  position: relative;
+}
+
+.hero-inner h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #ffffffcc; /* branco translúcido */
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
