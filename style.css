@@ -23,7 +23,7 @@ body {
   top: 0;
   z-index: 1000;
   background: linear-gradient(135deg, #2d0c57, #512da8);
-  padding: 20px 80px;
+  padding: 1px 80px;
   display: flex;
   justify-content: space-between; /* Logo à esquerda, nav à direita */
   align-items: center;
