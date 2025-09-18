@@ -341,3 +341,77 @@ button:active, .btn:active {
   margin: 12px auto 0;
   border-radius: 2px;
 }
+
+/* ===================== GRÁFICOS DAS PROFISSÕES ===================== */
+
+/* ===================== ESTILO DO GRÁFICO ===================== */
+.grafico-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 140px;
+    text-align: center;
+}
+
+.label {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #e0dfff;
+}
+
+.progress {
+    position: relative;
+    width: 60px;
+    height: 260px;
+    background-color: #2d0c57; /* Fundo escuro da barra, visível na parte "vazia" */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    
+    /* Adiciona transição para o efeito de hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
+}
+
+/* Efeito de hover na barra inteira (contêiner) */
+.progress:hover {
+    transform: translateY(-8px); /* Eleva a barra ao passar o mouse */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Sombra mais intensa */
+}
+
+.progress::before {
+    content: '';
+    width: 100%;
+    height: var(--percent);
+    background: linear-gradient(135deg, #512da8, #2d0c57); /* Cor original */
+    border-radius: 15px;
+    position: absolute;
+    bottom: 0;
+    transition: height 1s ease-in-out, background 0.3s ease-in-out; /* Adiciona transição para a cor */
+}
+
+/* Efeito de hover na parte colorida da barra (::before) */
+.progress:hover::before {
+    background: linear-gradient(135deg, #4b38c8); /* Nova cor ao passar o mouse */
+}
+
+.progress span {
+    position: absolute;
+    bottom: 8px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 1; /* Garante que o texto fique acima da mudança de cor */
+}
