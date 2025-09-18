@@ -298,13 +298,28 @@ button:active, .btn:active {
   justify-content: center;
   text-align: center;
   padding: 3rem 0;
-
-  /* Imagem de fundo */
-  background: url("assets/programador-pag.jpg") no-repeat center center;
-  background-size: cover;
-
   position: relative;
   color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Apenas a página Programador */
+.hero-programador {
+  background-image: url("assets/programador-pag.jpg");
+}
+
+.hero-designer {
+  background-image: url("assets/designer-pag.jpg");
+}
+
+.hero-medico{
+  background-image: url("assets/medico-pag.jpg");
+}
+
+.hero-engenheiro{
+  background-image: url("assets/engenheiro-pag.jpg");
 }
 
 /* Contraste suave na lateral direita */
@@ -328,7 +343,6 @@ button:active, .btn:active {
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* Detalhe sutil */
   position: relative;
 }
 
@@ -341,6 +355,7 @@ button:active, .btn:active {
   margin: 12px auto 0;
   border-radius: 2px;
 }
+
 
 /* ===================== GRÁFICOS DAS PROFISSÕES ===================== */
 
