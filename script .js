@@ -35,4 +35,3 @@ document.querySelectorAll('section#profissoes article').forEach(article => {
     });
   }
 });
-

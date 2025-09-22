@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -30,22 +30,25 @@ body {
     transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-.logo-name{
+.logo-name {
     display: flex;
     align-items: center;
 }
 
-.logo-name img{
+.logo-name img {
     vertical-align: middle;
 }
-.header span{
+
+.header span {
     background: linear-gradient(90deg, #8c82fc, #6c63ff, #5a50e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.nome-pagina{
+
+.nome-pagina {
     font-weight: 800;
 }
+
 .header.blur {
     background: rgba(45, 12, 87, 0.7);
     backdrop-filter: blur(5px);
@@ -59,7 +62,7 @@ body {
     text-decoration: none;
 }
 
-.nome-pagina{
+.nome-pagina {
     background-color: linear-gradient(135deg, #2d0c57, #512da8);
 }
 
@@ -127,11 +130,12 @@ body {
     padding: 20px 0;
     align-items: stretch;
 }
-/* ===================== TEXTO ===================== */
 
-.text p{
+/* ===================== TEXTO ===================== */
+.text p {
     text-indent: 40px;
 }
+
 /* ===================== SEÇÕES ===================== */
 .section {
     padding: 40px 0;
@@ -208,36 +212,11 @@ body {
     border-radius: 12px;
 }
 
-/* ===================== BARRA DE PESQUISA ===================== */
 
-/* ===================== BARRA DE PESQUISA ===================== */
-
-input{
-    background-color: #fffffe;
-    color: #0f0e17;
-    display: flex;
-    width: 50%;
-    margin: 0 auto;
-    padding: 15px;
-    border-radius: 12px;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.15);
-    transition: border .4s ease-in-out;
-}
-
-input:focus{
-    border-color: #4b38c8;
-    outline: none;
-}
-
-input::placeholder {
-    font-size: .9rem;
-}
-
-/* O restante do seu código CSS */
 
 /* ===================== BOTÕES PADRÃO ===================== */
-button, .btn {
+button,
+.btn {
     background: linear-gradient(135deg, #2d0c57, #512da8);
     color: #ffffff;
     border: none;
@@ -250,13 +229,15 @@ button, .btn {
     box-shadow: 0px 4px 12px rgba(75, 56, 200, 0.5);
 }
 
-button:hover, .btn:hover {
+button:hover,
+.btn:hover {
     background: #4b38c8;
     box-shadow: 0 6px 20px rgba(75, 56, 200, 0.7);
     transform: translateY(-3px);
 }
 
-button:active, .btn:active {
+button:active,
+.btn:active {
     transform: translateY(0);
     box-shadow: 0 3px 10px rgba(75, 56, 200, 0.5);
 }
@@ -313,27 +294,50 @@ button:active, .btn:active {
     background-image: url("assets/designer-pag.jpg");
 }
 
-.hero-medico{
+.hero-medico {
     background-image: url("assets/medico-pag.jpg");
 }
 
-.hero-engenheiro{
+.hero-engenheiro {
     background-image: url("assets/engenheiro-pag.jpg");
 }
 
-.hero-principal{
+.hero-advogado {
+    background-image: url("assets/advogado-pag.jpg");
+}
+
+.hero-professor{
+    background-image: url("assets/professor-pag.jpg");
+}
+
+.hero-jornalista{
+    background-image: url("assets/jornalista-pag.jpg");
+}
+
+.hero-policial{
+    background-image: url("assets/policial-pag.jpg");
+}
+.hero-marketing_digital{
+    background-image: url("assets/marketing_digital-pag.jpg");
+}
+.hero-psicologo{
+    background-image: url("assets/psicologo-pag.jpg");
+}
+
+.hero-principal {
     background-image: url("assets/ia-principal.png");
 }
 
-.hero-principal2{
-  background-image: url("assets/ia-sociedade.jpg");
+.hero-principal2 {
+    background-image: url("assets/ia-sociedade.jpg");
 }
+
 /* Contraste suave na lateral direita */
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(0,0,0,0.6) 50%, transparent 70%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 50%, transparent 70%);
 }
 
 /* Conteúdo por cima */
@@ -348,7 +352,7 @@ button:active, .btn:active {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     position: relative;
 }
 
@@ -357,7 +361,8 @@ button:active, .btn:active {
     display: block;
     width: 60px;
     height: 3px;
-    background: #ffffffcc; /* branco translúcido */
+    background: #ffffffcc;
+    /* branco translúcido */
     margin: 12px auto 0;
     border-radius: 2px;
 }
@@ -394,39 +399,46 @@ button:active, .btn:active {
     position: relative;
     width: 60px;
     height: 260px;
-    background-color: #2d0c57; /* Fundo escuro da barra, visível na parte "vazia" */
+    background-color: #2d0c57;
+    /* Fundo escuro da barra, visível na parte "vazia" */
     border-radius: 15px;
     overflow: hidden;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-    
+
     /* Adiciona transição para o efeito de hover */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    cursor: pointer; /* Muda o cursor para indicar interatividade */
+    cursor: pointer;
+    /* Muda o cursor para indicar interatividade */
 }
 
 /* Efeito de hover na barra inteira (contêiner) */
 .progress:hover {
-    transform: translateY(-8px); /* Eleva a barra ao passar o mouse */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Sombra mais intensa */
+    transform: translateY(-8px);
+    /* Eleva a barra ao passar o mouse */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+    /* Sombra mais intensa */
 }
 
 .progress::before {
     content: '';
     width: 100%;
     height: var(--percent);
-    background: linear-gradient(135deg, #512da8, #2d0c57); /* Cor original */
+    background: linear-gradient(135deg, #512da8, #2d0c57);
+    /* Cor original */
     border-radius: 15px;
     position: absolute;
     bottom: 0;
-    transition: height 1s ease-in-out, background 0.3s ease-in-out; /* Adiciona transição para a cor */
+    transition: height 1s ease-in-out, background 0.3s ease-in-out;
+    /* Adiciona transição para a cor */
 }
 
 /* Efeito de hover na parte colorida da barra (::before) */
 .progress:hover::before {
-    background: linear-gradient(135deg, #4b38c8); /* Nova cor ao passar o mouse */
+    background: linear-gradient(135deg, #4b38c8);
+    /* Nova cor ao passar o mouse */
 }
 
 .progress span {
@@ -434,5 +446,6 @@ button:active, .btn:active {
     bottom: 8px;
     color: #fff;
     font-weight: 600;
-    z-index: 1; /* Garante que o texto fique acima da mudança de cor */
+    z-index: 1;
+    /* Garante que o texto fique acima da mudança de cor */
 }
